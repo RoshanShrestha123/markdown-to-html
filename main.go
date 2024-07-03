@@ -16,6 +16,9 @@ func main() {
 	###### Header 6
 	- Bullet List Item 1
 	- Bullet List Item 2
+	# header
+	 - test
+
 	`
 	htmlCode := converter.ConvertToHTML(md)
 	fmt.Println(htmlCode)
