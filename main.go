@@ -7,19 +7,23 @@ import (
 )
 
 func main() {
-	fmt.Println("Convert Markdown to HTML")
-	md := `
-	## Header 2
-	### Header 3
-	#### Header 4
-	##### Header 5
-	###### Header 6
-	- Bullet List Item 1
-	- Bullet List Item 2
-	# header
-	 - test
+	text := `## Header32
+	## Header1
+	## Header54
+	- test
+	- test2 
+	- test 3
+	-----
 
-	`
-	htmlCode := converter.ConvertToHTML(md)
-	fmt.Println(htmlCode)
+
+	## Header
+	## Header
+
+	- test man
+	- test man
+`
+
+	html := converter.ConvertMdToHTML(text)
+	fmt.Println(html)
+
 }
